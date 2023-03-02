@@ -1,5 +1,5 @@
 # <span style="color:purple"> Негро Ангелина</span> 
-![Мое фото](../Markdown/my photo.jpg)
+![Мое фото](../Markdown/myPhoto.jpg)
 * * *
 ### Контакты для связи:
 tel +375 29 1437011
