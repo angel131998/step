@@ -1,6 +1,6 @@
 # <span style="color:purple"> Негро Ангелина</span> 
 
-![Мое фото](file:///D:/step/homework/Markdown/myPhoto.jpg)
+![Мое фото](https://raw.githubusercontent.com/angel131998/step/gh-pages/homework/Markdown/myPhoto.jpg)
 
 * * *
 
