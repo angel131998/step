@@ -13,13 +13,13 @@ a {
     font: 23px italic;
     list-style-type: none;
 }
-h2 {
+.title2 {
     font-size: 18px;
     color: black;
     font-weight: 400;
     background: #eaeaea;
 }
-.descr {
+.description {
     font: 14px italic;
     color: #707070;
     font-weight: 600;
@@ -32,11 +32,11 @@ h2 {
     line-height: 24px;
     text-align: left;
 }
-.ingr li{
+.ingredients li{
     font: 17px Colibri;
     color: #800080;
     list-style-type: none;
-    background: url(img/icon.png) no-repeat 0 3px;
+    background: url(images/icon.png) no-repeat 0 3px;
     padding-left: 24px;
 }
 .cake {
