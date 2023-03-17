@@ -16,6 +16,12 @@ a {
     font: 23px italic;
     list-style-type: none;
 }
+.weight {
+    font-weight: bold;
+}
+.price {
+    font-weight: bold;
+}
 .title2 {
     font-size: 18px;
     color: black;
@@ -86,6 +92,9 @@ textarea {
 }
 .address {
     font-size: 24px;
+}
+.contacts {
+    font-weight: bold;
 }
 footer {
     background:#e8d8e8;
