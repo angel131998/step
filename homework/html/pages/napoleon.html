@@ -6,46 +6,63 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img class="logo" src="../images/logo.png" width="100" alt="Лучшие торты">Лучшие торты</a>
-        <ul class="menu">
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </header>
-    <hr>
-    <h1>Торт "Наполеон с соленой карамелью"</h1>
-    <a href="../images/cake2.jpg" target="_blank">
-        <img class="cake" alt="Наполеон" src="../images/cake2.jpg" width="330">
-    </a>
-    <p>Масса - <span class="weight">600 г</span></p>
-    <p>Цена - <span class="price">32р.</span></p>
-    <h2 class="title2">Описание</h2>
-    <p class="description">Только натуральные ингредиенты, обилие вкусного крема, домашняя соленая карамель, декор из свежих ягод, красивая подарочная упаковка.</p>
-    <h2 class="title2">Состав</h2>
-    <table class="ingredients">
-        <tr>
-            <td>Ингредиент 1</td>
-            <td>натуральное слоеное тесто на сливочном масле</td>
-        </tr>
-        <tr>
-            <td>Ингредиент 2</td>
-            <td>сливочный заварной крем</td>
-        </tr>
-        <tr>
-            <td>Ингредиент 3</td>
-            <td>домашняя соленая карамель с розовой гималайской солью</td>
-        </tr>
-        <tr>
-            <td>Ингредиент 4</td>
-            <td>декор свежими ягодами</td>
-        </tr>
-    </table>
-    <h2 class="title2">Дополнительная информация</h2>
-    <p class="info">При заказе трёх тортов "Наполеон с соленой карамелью" действует скидка <span class="price">5%</span>.</p>
-    <footer>
-        <div class="copyright">&copy; "Все права защищены"</div>
-    </footer>
+    <div class="container">
+        <header class="header">
+            <div class="backgroundImg"></div>
+            <div class="head">
+                <a class="logourl" href="../index.html"><img class="logo" src="../images/logo.png" width="100" alt="Лучшие торты">Лучшие торты</a>
+                <ul class="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </header>
+        <hr>
+        <main class="main">
+            <h1>Торт "Наполеон с соленой карамелью"</h1>
+            <div class="block">
+                <div class="block1">
+                <a href="../images/cake2.jpg" target="_blank">
+                    <img class="cake" alt="Наполеон" src="../images/cake2.jpg" width="330">
+                </a>
+                <p>Масса - <span class="weight">600 г</span></p>
+                <p>Цена - <span class="price">32р.</span></p>
+                </div>
+                <div class="block2">
+                <h2 class="title2 descriptionTitle">Описание</h2>
+                <p class="description">Только натуральные ингредиенты, обилие вкусного крема, домашняя соленая карамель, декор из свежих ягод, красивая подарочная упаковка.</p>
+                <form action="#">
+                    <button class="button">Купить</button>
+                </form>
+                </div>
+            </div>
+            <h2 class="title2">Состав</h2>
+            <table class="ingredients">
+                <tr>
+                    <td>Ингредиент 1</td>
+                    <td>натуральное слоеное тесто на сливочном масле</td>
+                </tr>
+                <tr>
+                    <td>Ингредиент 2</td>
+                    <td>сливочный заварной крем</td>
+                </tr>
+                <tr>
+                    <td>Ингредиент 3</td>
+                    <td>домашняя соленая карамель с розовой гималайской солью</td>
+                </tr>
+                <tr>
+                    <td>Ингредиент 4</td>
+                    <td>декор свежими ягодами</td>
+                </tr>
+            </table>
+            <h2 class="title2">Дополнительная информация</h2>
+            <p class="info">При заказе трёх тортов "Наполеон с соленой карамелью" действует скидка <span class="price">5%</span>.</p>
+        </main>
+        <hr>
+        <footer class="footer">
+            <div class="copyright">&copy; "Все права защищены"</div>
+        </footer>
+    </div>
 </body>
 </html>

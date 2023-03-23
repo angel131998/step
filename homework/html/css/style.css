@@ -1,8 +1,51 @@
 body {
     background: #f8f8f8;
+    display: flex;
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+.header {
+    height: 120px;
+    display: flex;
+    position: relative;
+}
+.backgroundImg {
+    width: 1200px;
+    position: absolute;
+    background-image: url("../images/header.jpg");
+    height: 120px;
+    opacity: 30%;
+    z-index: -1;
+}
+.logourl {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 15px;
 }
 a {
     text-decoration: none;
+}
+a:hover {
+    color: #350463;
+}
+a:active {
+    color: #21033a;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 15px;
 }
 .menu a {
     text-decoration: none;
@@ -22,12 +65,37 @@ a {
 .price {
     font-weight: bold;
 }
+.main {
+    max-width: 1200px;
+}
+.cards {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    width: 340px;
+    height: 470px;
+    border: solid 3px #c1a1e7;
+}
 .title2 {
     font-size: 18px;
     color: black;
     font-weight: 400;
     background: #eaeaea;
 }
+.descriptionTitle {
+    margin: 0;
+}
+.block {
+    display: flex;
+    gap: 20px;
+}
+.block2 {
+    position: relative;
+}
+
 .description {
     font: 14px italic;
     color: #707070;
@@ -38,6 +106,28 @@ a {
     font: 35px Italic;
     color: #3a056c;
     font-weight: 1000;
+}
+.button {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: #8A2BE2;
+    background: linear-gradient(180deg, hsla(267, 51%, 85%, 1) 50%, hsla(266, 41%, 93%, 1) 93%);
+    position: absolute;
+    margin-top: 15px;
+    right: 0px;
+}
+.button:hover {
+    cursor: pointer;
+    color: #350463;
+    background:linear-gradient(180deg, hsla(268, 51%, 77%, 1) 50%, hsla(267, 19%, 88%, 1) 89%);
+}
+.button:active {
+    color: #120121;
+    background:linear-gradient(180deg, hsla(268, 58%, 77%, 1) 50%, hsla(266, 15%, 80%, 1) 89%);
 }
 .info {
     font-size: 16px;
@@ -96,11 +186,15 @@ textarea {
 .contacts {
     font-weight: bold;
 }
-footer {
+.footer {
     background:#e8d8e8;
     height: 100px;
     font-weight: bold;
+    position: relative;
 }
 .copyright {
-    text-align: center;
+    text-align: right;
+    position: absolute;
+    right:10px;
+    top: 10px;
 }
