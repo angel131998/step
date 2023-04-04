@@ -5,7 +5,8 @@
     display: flex;
 }
 .container{
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
 }
 .header__container{
@@ -268,7 +269,7 @@
 }
 .firstPart_footer {
     display: flex;
-    gap: 407px;
+    justify-content: space-between;
 }
 .footer__title {
     width: 340.96px;
@@ -359,13 +360,15 @@
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .header__contacts_wrapper{
     box-sizing: border-box;
     margin-top: 54px;
     margin-bottom: 57px;
     min-height: 250px;
     background-image: url("../content/contact_us.jpg");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 51px;
 }
 .main_center {
