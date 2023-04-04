@@ -155,6 +155,10 @@
     width: 15px;
     height: 15px;
 }
+.card_button:hover svg path{
+    fill: rgba(90, 152, 208, 0.6);;
+}
+
 .title_finished_project {
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
