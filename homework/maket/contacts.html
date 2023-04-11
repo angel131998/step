@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
 </head>
 <body>
 <div class="header__contacts">
@@ -26,25 +28,25 @@
 <div class="main">
     <div class="container main__container">
         <div class="main_center">
-            <div class="rightPart_contacts">
+            <div class="leftPart_contacts">
                 <img class="contact_img" src="content/contact.png" alt="contact">
                 <div class="title_contact address">ADDRESS</div>
                 <div class="text_contact address_text">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</div>
                 <div class="title_contact phone">PHONE</div>
-                <p class="text_contact phone_text">+7-812-7313-4321</p>
-                <p class="text_contact phone_text">+7-817-0000-1234</p>
+                <a class="text_contact phone_text tel" href="tel:+781273134321">+7-812-7313-4321</a>
+                <a class="text_contact phone_text tel" href="tel:+781700001234">+7-817-0000-1234</a>
                 <div class="title_contact service">ONLINE SERVICE</div>
                 <a class="text_contact service_text1" href="index.html">www.site.com</a>
-                <p class="text_contact service_text2">hello.site@gmail.com</p>
+                <a class="text_contact service_text2 mail" href="mailto:hello.site@gmail.com">hello.site@gmail.com</a>
             </div>
             <form class="contact_form" id="contact_form" action="#">
                     <div class="title_form">SEND US MESSAGE</div>
                     <div class="text_form">Full Name</div>
-                    <div><input class="input" placeholder="Your Name" required type="text"></div>
+                    <input class="input" placeholder="Your Name" required type="text">
                     <div class="text_form">Email</div>
-                    <div><input class="input" placeholder="Your Email" type="email"></div>
+                    <input class="input" placeholder="Your Email" required type="email">
                     <div class="text_form">Message</div>
-                <div><textarea class="input textarea_message" placeholder="Your Message" required type="text"></textarea></div>
+                    <textarea class="input textarea_message" placeholder="Your Message" required type="text"></textarea>
                     <input class="submit" type="submit" value="SUBMIT">
             </form>
         </div>
@@ -54,7 +56,7 @@
 <div class="footer">
     <div class="container footer__container">
         <div class="firstPart_footer">
-            <div class="rightPart_footer">
+            <div class="leftPart_footer">
                 <div class="footer__title">Interested to work with our team?</div>
                 <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
             </div>
@@ -70,11 +72,11 @@
             </div>
             <div class="secondPart_footer1">
                 <div class="number">T.</div>
-                <div class="secondPart_footer1text">+7-812-7313-4321</div>
+                <a class="secondPart_footer1text tel" href="tel:+781273134321">+7-812-7313-4321</a>
             </div>
             <div class="secondPart_footer1">
                 <div class="number">E.</div>
-                <div class="secondPart_footer1text">hello.site@gmail.com</div>
+                <a class="secondPart_footer1text mail" href="mailto:hello.site@gmail.com">hello.site@gmail.com</a>
             </div>
         </div>
         <div class="rights">2021 All rights reserved.</div>
