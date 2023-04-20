@@ -50,7 +50,8 @@ body {
   font-weight: 300;
   line-height: 48px;
   text-transform: uppercase;
-  letter-spacing: 1.4px; }
+  letter-spacing: 1.4px;
+  height: 30px; }
 
 .menu__link {
   text-decoration: none;
@@ -164,11 +165,11 @@ body {
   letter-spacing: -1.4px; }
 
 .titles {
+  height: 55px;
   display: flex;
   width: 269px;
   justify-content: space-between;
-  border-bottom: 1px solid #6c6c6c;
-  padding-bottom: 12px; }
+  border-bottom: 1px solid #6c6c6c; }
 
 .title1:hover {
   box-sizing: border-box;
