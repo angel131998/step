@@ -218,7 +218,7 @@ body {
   background-image: url("../img/promo-img1.jpg");
   min-height: 683px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   box-sizing: border-box;
   width: 100%;
   padding: 208px 0 256px 42px; }
@@ -227,7 +227,7 @@ body {
   background-image: url("../img/promo-img2.jpg");
   min-height: 683px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   box-sizing: border-box;
   width: 100%;
   padding: 208px 0 256px 53px; }
@@ -297,7 +297,7 @@ body {
   background-image: url("../img/product11.jpg");
   min-height: 570px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   box-sizing: border-box;
   width: 100%;
   padding: 169px 0 185px 30px; }
@@ -409,7 +409,7 @@ body {
 .useful__item {
   padding: 0;
   margin: 0px;
-  letter-spacing: 0.4px; }
+  letter-spacing: 0.3px; }
 
 .useful__item2 {
   margin: 10px 0; }
@@ -470,7 +470,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.44px; }
+  letter-spacing: 0.4px; }
 
 .footer__bottom {
   display: flex; }
