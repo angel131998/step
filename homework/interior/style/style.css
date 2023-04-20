@@ -124,6 +124,30 @@ body {
 .header__left__color-text {
   color: #43a047; }
 
+.slider {
+  display: flex;
+  margin-top: 141px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; }
+
+.dot {
+  opacity: 0.4; }
+
+.dot:hover {
+  height: 40px;
+  width: 40px;
+  opacity: 1; }
+  .dot:hover path {
+    fill: #212121; }
+
+.dot:active {
+  height: 40px;
+  width: 40px;
+  opacity: 1; }
+  .dot:active path {
+    fill: #212121; }
+
 .main__left__color-text {
   color: #e53935; }
 
@@ -206,7 +230,7 @@ body {
   background-size: contain;
   box-sizing: border-box;
   width: 100%;
-  padding: 208px 0 256px 42px; }
+  padding: 208px 0 256px 53px; }
 
 .main__left__color-text1 {
   color: #1e88e5;
@@ -261,6 +285,9 @@ body {
 .main__left-part {
   max-width: 488px;
   box-sizing: border-box; }
+
+.slider1 {
+  margin-top: 226px; }
 
 .products {
   display: flex;

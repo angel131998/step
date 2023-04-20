@@ -123,6 +123,32 @@ body {
 .header__left__color-text {
   color: #43a047;
 }
+.slider {
+  display: flex;
+  margin-top: 141px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  opacity: 0.4;
+}
+.dot:hover {
+  height: 40px;
+  width: 40px;
+  opacity:1;
+  path {
+    fill: $colorBlack;
+  }
+}
+.dot:active {
+  height: 40px;
+  width: 40px;
+  opacity:1;
+  path {
+    fill: $colorBlack;
+  }
+}
 .main__left__color-text {
   color: #e53935;
 }
@@ -248,6 +274,9 @@ body {
 .main__left-part {
   max-width: 488px;
   box-sizing: border-box;
+}
+.slider1 {
+  margin-top: 226px;
 }
 .products {
   display: flex;
