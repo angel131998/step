@@ -1,13 +1,19 @@
+body {
+     min-height: 100%;
+     display: flex;
+     flex-direction: column;
+ }
 .header{
-    min-height: 400px;
     background-image: url("../content/header_background.png");
     background-repeat: no-repeat;
     background-size:cover;
     display: flex;
+    box-sizing: border-box;
+    background-position-y: bottom;
 }
 .container{
-    max-width: 1140px;
     width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .header__container{
@@ -44,7 +50,7 @@
     color: #1F3F68;
 }
 .header__text{
-    margin-top: 39px;
+    margin-top: 32px;
     max-width: 425px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -53,7 +59,6 @@
     color: #1F3F68;
     opacity: 0.6;
 }
-
 .header__button{
     margin-top: 70px;
     font-family: 'Roboto', sans-serif;
@@ -86,35 +91,40 @@
     display: flex;
     gap: 32px;
     margin-bottom: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .main__card {
     box-sizing: border-box;
-    width: 359px;
-    height: 480.13px;
+    max-width: 359px;
+    flex-basis: 140px;
+    flex-grow: 1;
     background: #FFF;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
     padding: 44px 32px;
+    display: flex;
+    flex-direction: column;
 }
 .icon1 {
-    width: 171.94px;
-    height: 120.72px;
-    margin: 0 85px 0 38px;
+    max-width: 171.94px;
+    min-height: 120.72px;
+    align-self: center;
 }
 .icon2 {
-    height: 121.8px;
-    width: 125px;
-    margin: 0 85px;
+    min-height: 121.8px;
+    max-width: 125px;
+    align-self: center;
 }
 .icon3 {
-    width: 147.38px;
-    height: 118.68px;
-    margin: 0 85px 0 62px;
+    max-width: 147.38px;
+    min-height: 118.68px;
+    align-self: center;
 }
 
 .card_title {
-    width: 295px;
-    height: 56px;
+    max-width: 295px;
+    min-height: 56px;
     font-family: 'Roboto',sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -124,8 +134,8 @@
     margin-bottom: 14px;
 }
 .card_text {
-    width: 295px;
-    height: 95px;
+    max-width: 295px;
+    min-height: 95px;
     font-family: 'Roboto', sans-serif;
     line-height: 26px;
     letter-spacing: 0.05em;
@@ -137,8 +147,8 @@
     display: flex;
     text-decoration: none;
     gap: 24px;
-    width: 121px;
-    height: 27px;
+    max-width: 121px;
+    min-height: 27px;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -158,7 +168,6 @@
 .card_button:hover svg path{
     fill: rgba(90, 152, 208, 0.6);;
 }
-
 .title_finished_project {
     font-family: 'Roboto',sans-serif;
     font-weight: 300;
@@ -169,15 +178,16 @@
     color: #000;
     margin-bottom: 32px;
 }
+
 .main__finished-subtitle {
-    width: 750px;
+    display: flex;
+    max-width: 750px;
     font-family: 'Roboto', sans-serif;
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.05em;
     color: #222;
-    margin: auto;
-    margin-bottom: 64px;
+    margin: auto auto 64px auto;
 }
 .main__smart-home{
     position: relative;
@@ -189,6 +199,7 @@
 .smart-home__img{
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .smart-home__text{
     position: absolute;
@@ -201,21 +212,24 @@
     right: 64px;
     display: none;
 }
-.main__apps-wrapper{
+.main__apps-wrapper {
     margin-top: 32px;
     display: flex;
     gap: 32px;
     margin-bottom: 112px;
+    justify-content: center;
+    align-items: center;
 }
 .main__apps {
     position: relative;
 }
 .main__app{
-    background-color: blue;
+    position: relative;
     flex-grow: 1;
-    width: 554px;
-    height: 417px;
+    width: 100%;
+    border-radius: 10px;
 }
+
 .app__text {
     position: absolute;
     font-family: 'Roboto',sans-serif;
@@ -231,9 +245,13 @@
     display: block;
 }
 .gradient {
-    display: inline-block;
+    display: block;
+    width: 100%;
+    height: 100%;
     position: relative;
     line-height: 0;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .gradient:hover:after {
     cursor: pointer;
@@ -245,7 +263,6 @@
     top: 0;
     left: 0;
     background: transparent;
-    background: url(https://snipp.ru/img/plus.png) 0 0 no-repeat;
 }
 .gradient1:hover:after {
     background: linear-gradient(89.99deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%)
@@ -258,14 +275,14 @@
 }
 .gradient1:hover:before {
     content: "";
-    display: inline-block;
-    width: 500px;
-    height: 399px;
-    margin: -26px 0 0 -26px;
+    display: block;
+    width: 100%;
+    height: 87%;
     position: absolute;
     bottom: 0;
     left: 0;
     background: url(../content/smart.svg) 0 0 no-repeat;
+    background-size: 40%;
     z-index: 100;
 }
 .footer {
@@ -273,11 +290,13 @@
     background: #316099;
 }
 .firstPart_footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer__title {
-    width: 340.96px;
+    max-width: 340.96px;
     font-family: 'Roboto',sans-serif;
     font-size: 36px;
     line-height: 46px;
@@ -287,7 +306,7 @@
     margin-bottom: 32px;
 }
 .footer__text {
-    width: 494.77px;
+    max-width: 494.77px;
     font-family: 'Roboto',sans-serif;
     line-height: 26px;
     letter-spacing: 0.05em;
@@ -296,6 +315,7 @@
     margin-bottom: 96px;
 }
 .footer_button{
+    box-sizing: border-box;
     display: inline-block;
     background: #5A98D0;
     font-family: 'Roboto',sans-serif;
@@ -305,7 +325,7 @@
     color: #FFF;
     text-decoration: none;
     padding: 15px 80px;
-    margin: 165px 0 170px 0;
+
 }
 .footer_button:hover{
     background: #418bcb
@@ -317,15 +337,18 @@
 }
 .secondPart_footer {
     display: flex;
-    gap: 32px;
+    justify-content: space-between;
+    gap: 10px;
     font-family: 'Roboto',sans-serif;
     line-height: 26px;
     letter-spacing: 0.05em;
     color: #FFF;
     margin: 64px 0;
+    max-width: 358px;
 }
 .secondPart_footer1 {
     display: flex;
+    gap: 10px;
 }
 .number {
     width: 22.81px;
@@ -335,6 +358,7 @@
 .secondPart_footer1text {
     width: 315px;
     height: 48px;
+    color: #FFF;
 }
 .rights {
     font-family: 'Roboto', sans-serif;
@@ -357,7 +381,7 @@
 .contact_us_text {
     display: flex;
     margin: auto;
-    width: 780px;
+    max-width: 780px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -382,8 +406,8 @@
     justify-content: center;
 }
 .contact_img {
-    width: 300.31px;
-    height: 181px;
+    max-width: 300.31px;
+    /*height: 181px;*/
     margin-top: 73px;
 }
 .title_contact {
@@ -413,13 +437,13 @@
 }
 .contact_form {
     box-sizing: border-box;
-    width: 540px;
-    height: 800px;
+    max-width: 540px;
     background: #FFF;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
-    padding-left: 56px;
-    padding-top: 56px;
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
 }
 .title_form {
     font-family: 'Roboto',sans-serif;
@@ -440,9 +464,9 @@
     margin-bottom: 8px;
 }
 .input {
+    display: block;
     box-sizing: border-box;
-    width: 428px;
-    height: 72px;
+    max-width: 428px;
     opacity: 0.4;
     border: 1px solid #356EAD;
     border-radius: 10px;
@@ -451,19 +475,18 @@
     line-height: 30px;
     letter-spacing: 0.04em;
     color: #1F3F68;
-    padding-left: 36px;
+    padding: 21px 0 21px 36px ;
 }
 .textarea_message {
     box-sizing: border-box;
-    min-height: 144px;
     opacity: 0.4;
     border: 1px solid #356EAD;
     border-radius: 10px;
-    padding-top: 21px;
+    padding-bottom: 72px;
+    resize: none;
 }
 .submit {
-    width: 428px;
-    height: 72px;
+    display: block;
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
@@ -474,6 +497,7 @@
     letter-spacing: 0.04em;
     color: #FFF;
     margin-top: 72px;
+    padding: 23px 183px;
     border:none;
 }
 .submit:hover{
@@ -485,8 +509,22 @@
     padding-right: 19px;
     vertical-align: middle;
 }
-.service_text1 {
+.phone_text {
+    color: #1F3F68;
+    margin-bottom: 16px;
+}
+a {
+    display: block;
     text-decoration: none;
+}
+.tel:hover{
+    color: #418bcb;
+}
+.mail:hover {
+    color: #418bcb;
+}
+.service_text1 {
+    margin-bottom: 16px;
 }
 .service_text1:hover {
     color: #418bcb;
@@ -503,11 +541,11 @@
 }
 .map {
     max-width: 940px;
-    height: 480px;
+    width: 100%;
     margin-bottom: 112px;
     margin-top: 96px;
     justify-content: center;
-    display: block;
+    display: flex;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }

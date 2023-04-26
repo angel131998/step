@@ -1,0 +1,159 @@
+@media (max-width: 1199.98px) {
+  .container {
+    width: 930px; }
+
+  .main__left-text1 {
+    max-width: 299px; }
+
+  .wrapper-tele {
+    min-height: 416px; } }
+@media (max-width: 991.98px) {
+  .container {
+    width: 690px; }
+
+  .header {
+    min-height: 580px; }
+
+  .header__top {
+    margin-bottom: 120px; }
+
+  .logo__img {
+    width: 134px; }
+
+  .exclusive {
+    flex-direction: column; }
+
+  .left__title {
+    font-size: 52px; }
+
+  .header__left-part {
+    max-width: 400px; }
+
+  .slider {
+    margin-top: 100px; }
+
+  .wrapper {
+    min-height: 650px; }
+
+  .wrapper-tele {
+    padding-top: 16px;
+    min-height: 325px; }
+
+  .useful__items1 {
+    flex-direction: column;
+    gap: 10px; }
+
+  .useful {
+    margin-left: 30px;
+    margin-right: 30px; } }
+@media (max-width: 767.98px) {
+  .container {
+    width: 500px; }
+
+  .header {
+    min-height: 400px; }
+
+  .header__top {
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 25px;
+    margin-bottom: 133px; }
+
+  .menu {
+    flex-direction: column;
+    line-height: 26px; }
+
+  .wrapper {
+    padding-top: 100px;
+    min-height: 396px; }
+
+  .left__color-text {
+    margin-bottom: -17px;
+    font-size: 15px; }
+
+  .left__title {
+    font-size: 35px;
+    margin-bottom: 10px; }
+
+  .left__text {
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 5px; }
+
+  .main__left-part {
+    max-width: 273px; }
+
+  .title {
+    font-size: 30px; }
+
+  .explore1 {
+    margin-top: 0; }
+
+  .order {
+    padding: 5px 8px;
+    font-size: 10px;
+    letter-spacing: -0.4px; }
+
+  .slider {
+    margin-top: 0;
+    display: none; }
+
+  .products {
+    grid-gap: 0; }
+
+  .wrapper-tele {
+    min-height: 248px; }
+
+  .touch {
+    max-width: 155px; }
+
+  .input {
+    font-size: 7px; }
+
+  .footer__bottom {
+    gap: 20px; }
+
+  .icons {
+    margin: 0; } }
+@media (max-width: 575.98px) {
+  .container {
+    width: 85%; }
+
+  .main__featured__items {
+    flex-direction: column; }
+
+  .titles {
+    width: 147px; }
+
+  .title {
+    font-size: 18px; }
+
+  .title_active {
+    width: 100px; }
+
+  .title-new {
+    width: 50px; }
+
+  .main__trending__items {
+    flex-direction: column;
+    gap: 10px; }
+
+  .apps {
+    flex-direction: column; }
+
+  .footer__top {
+    flex-direction: column; }
+
+  .footer__bottom {
+    flex-direction: column; }
+
+  .useful {
+    margin: 25px 0; }
+
+  .footer__top {
+    max-width: 155px; }
+
+  .footer__bottom {
+    max-width: 155px; } }
+
+/*# sourceMappingURL=adaptive.css.map */

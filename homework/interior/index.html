@@ -6,21 +6,22 @@
     <title>Interior</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700,800" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/adaptive.css">
     <link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
   <header class="header">
       <div class="header__container container">
           <div class="header__top">
-              <a class="logo" href=""><img src="img/logo.png" alt="logo"></a>
+              <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo"></a>
               <div class="menu-search">
-                  <ul class="menu">
-                      <li class="menu__item home"><a class="menu__link" href="">Home</a></li>
-                      <li class="menu__item"><a class="menu__link" href="">Products</a></li>
-                      <li class="menu__item"><a class="menu__link" href="">History</a></li>
-                      <li class="menu__item"><a class="menu__link" href="">Showroom</a></li>
-                      <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
-                  </ul>
+                  <nav><ul class="menu">
+                      <li class="menu__item menu__item__home"><a class="menu__link" href="">Home</a></li>
+                      <li class="menu__item menu__item__products"><a class="menu__link" href="">Products</a></li>
+                      <li class="menu__item menu__item__history"><a class="menu__link" href="">History</a></li>
+                      <li class="menu__item menu__item__showroom"><a class="menu__link" href="">Showroom</a></li>
+                      <li class="menu__item menu__item__contact"><a class="menu__link" href="">Contact</a></li>
+                  </ul></nav>
                   <a class="search" href=""><img src="img/search.svg" alt="search"></a>
               </div>
           </div>
@@ -32,7 +33,7 @@
               </div>
           <div class="slider">
               <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
-              <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+              <a class="dot__link" href=""><svg class="dot_active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
               <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
           </div>
       </div>
@@ -42,16 +43,44 @@
             <div class="main__featured">
                 <div class="main__featured__items">
                     <div class="titles">
-                        <div class="title title1">Featured</div>
+                        <div class="title title_active title1">Featured</div>
                         <div class="title title-new title1">New</div>
                     </div>
-                    <div class="explore">Explore all <img src="img/arrow.svg" alt="arrow"></div>
+                    <a class="explore" href="">Explore all <img src="img/arrow.svg" alt="arrow"></a>
                 </div>
                 <div class="images">
+                    <div class="chair__card">
                     <img class="chair" src="img/chair.jpg" alt="chair">
-                    <img class="chair" src="img/chair1.jpg" alt="chair">
-                    <img class="chair" src="img/chair2.jpg" alt="chair">
-                    <img class="chair" src="img/chair3.jpg" alt="chair">
+                        <div class="chair__card_hover">
+                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <div class="chair__card_hover__title">Fishnet Chair</div>
+                            <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
+                        </div>
+                    </div>
+                    <div class="chair__card">
+                        <img class="chair" src="img/chair1.jpg" alt="chair">
+                        <div class="chair__card_hover">
+                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <div class="chair__card_hover__title">Fishnet Chair</div>
+                            <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
+                        </div>
+                    </div>
+                    <div class="chair__card">
+                        <img class="chair" src="img/chair2.jpg" alt="chair">
+                        <div class="chair__card_hover">
+                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <div class="chair__card_hover__title">Fishnet Chair</div>
+                            <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
+                        </div>
+                    </div>
+                    <div class="chair__card">
+                        <img class="chair" src="img/chair3.jpg" alt="chair">
+                        <div class="chair__card_hover">
+                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <div class="chair__card_hover__title">Fishnet Chair</div>
+                            <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>
@@ -73,7 +102,7 @@
               <div class="main__trending">
                   <div class="main__trending__items">
                       <div class="title trending__title">Trending Products</div>
-                      <div class="explore explore1">Explore all <img src="img/arrow.svg" alt="arrow"></div>
+                      <a class="explore explore1" href="">Explore all <img src="img/arrow.svg" alt="arrow"></a>
                   </div>
                   <div class="images1">
                       <img class="product" src="img/product1.jpg" alt="product">
@@ -95,7 +124,7 @@
                 </div>
               <div class="slider slider1">
                   <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
-                  <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+                  <a class="dot__link" href=""><svg class="dot_active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
                   <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
               </div>
           </div>
@@ -108,12 +137,10 @@
                   <div class="left__text main__left-text3">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</div>
                   <a class="order" href="">Order Us <img src="img/arrow.svg" alt="arrow"></a>
               </div>
-              <div class="images2">
-                      <img class="product1" src="img/product12.jpg" alt="product">
-                      <img class="product1" src="img/product13.jpg" alt="product">
-                      <img class="product1" src="img/product14.jpg" alt="product">
-                      <img class="product1" src="img/product15.jpg" alt="product">
-              </div>
+              <img class="product1" src="img/product12.jpg" alt="product">
+              <img class="product1" src="img/product13.jpg" alt="product">
+              <img class="product1" src="img/product14.jpg" alt="product">
+              <img class="product1" src="img/product15.jpg" alt="product">
           </div>
       </div>
       <div class="wrapper-tele">
@@ -142,7 +169,7 @@
             <div class="useful">
                 <div class="useful__title footer__title">Useful Information</div>
                 <div class="useful__items1">
-                    <li class="useful__items useful__items">
+                    <li class="useful__items">
                         <a class="useful__item__link" href=""><ul class="useful__item">Sales terms</ul></a>
                         <a class="useful__item__link" href=""><ul class="useful__item useful__item2 ">Customer care</ul></a>
                         <a class="useful__item__link" href=""><ul class="useful__item">Delivery</ul></a>
@@ -159,7 +186,7 @@
                 <div class="touch__text footer__text">Suscribe to know about our latest news, products and special offers just for suscribers.</div>
                 <div class="touch__input">
                     <input class="input" type="text" placeholder="your email address">
-                    <button class="button"><img class="tg" src="img/tg.png"></button>
+                    <button class="button"><img class="mail" src="img/mail.png"></button>
                 </div>
             </div>
         </div>
@@ -171,7 +198,7 @@
                 <a class="social__link" href=""><img class="social" src="img/google.png" alt="google" width="26px" height="26px"></a>
                 <a class="social__link" href=""><img class="social" src="img/pinterest.svg" alt="pinterest" width="26px" height="26px"></a>
             </div>
-            <div class="terms bottom__text">Terms & Conditions  /  Privacy policy & Cookies</div>
+            <a class="terms bottom__text" href="">Terms & Conditions  /  Privacy policy & Cookies</a>
         </div>
     </div>
   </footer>
