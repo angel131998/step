@@ -13,28 +13,43 @@
   <header class="header">
       <div class="header__container container">
           <div class="header__top">
-              <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo"></a>
+              <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo"></a>
+              <nav class="menu_mobile">
+                  <label for ="menu-button" class="burger-menu"><img src="img/menu_burger.svg"></label>
+                  <input id="menu-button" class="burger-button" type="checkbox">
+                  <div class="menu_mobile__wrapper">
+                    <ul class="menu_mobile__wrapper1">
+                        <li class="menu__item menu__item__home"><a class="menu__link" href="#">Home</a></li>
+                        <li class="menu__item menu__item__products"><a class="menu__link" href="#">Products</a></li>
+                        <li class="menu__item menu__item__history"><a class="menu__link" href="#">History</a></li>
+                        <li class="menu__item menu__item__showroom"><a class="menu__link" href="#">Showroom</a></li>
+                        <li class="menu__item menu__item__contact"><a class="menu__link" href="#">Contact</a></li>
+                    </ul>
+                    <a class="search" href="#"><img src="img/search.svg" alt="search"></a>
+                      <label for="menu-button" class="cross"><img src="img/cross.svg" alt="search"></label>
+                  </div>
+              </nav>
               <div class="menu-search">
                   <nav><ul class="menu">
-                      <li class="menu__item menu__item__home"><a class="menu__link" href="">Home</a></li>
-                      <li class="menu__item menu__item__products"><a class="menu__link" href="">Products</a></li>
-                      <li class="menu__item menu__item__history"><a class="menu__link" href="">History</a></li>
-                      <li class="menu__item menu__item__showroom"><a class="menu__link" href="">Showroom</a></li>
-                      <li class="menu__item menu__item__contact"><a class="menu__link" href="">Contact</a></li>
+                      <li class="menu__item menu__item__home"><a class="menu__link" href="#">Home</a></li>
+                      <li class="menu__item menu__item__products"><a class="menu__link" href="#">Products</a></li>
+                      <li class="menu__item menu__item__history"><a class="menu__link" href="#">History</a></li>
+                      <li class="menu__item menu__item__showroom"><a class="menu__link" href="#">Showroom</a></li>
+                      <li class="menu__item menu__item__contact"><a class="menu__link" href="#">Contact</a></li>
                   </ul></nav>
-                  <a class="search" href=""><img src="img/search.svg" alt="search"></a>
+                  <a class="search" href="#"><img src="img/search.svg" alt="search"></a>
               </div>
           </div>
               <div class="header__left-part left-part">
                   <div class="left__color-text header__left__color-text">Trending</div>
                   <div class="left__title">Fishnet Chair</div>
                   <div class="left__text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</div>
-                  <a class="order" href="">Order Us <img src="img/arrow.svg" alt="arrow"></a>
+                  <a class="order" href="#">Order Us <img src="img/arrow.svg" alt="arrow"></a>
               </div>
           <div class="slider">
-              <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
-              <a class="dot__link" href=""><svg class="dot_active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
-              <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+              <a class="dot__link" href="#"><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+              <a class="dot__link" href="#"><svg class="dot_active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+              <a class="dot__link" href="#"><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
           </div>
       </div>
   </header>
@@ -52,7 +67,7 @@
                     <div class="chair__card">
                     <img class="chair" src="img/chair.jpg" alt="chair">
                         <div class="chair__card_hover">
-                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
                             <div class="chair__card_hover__title">Fishnet Chair</div>
                             <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
                         </div>
@@ -60,7 +75,7 @@
                     <div class="chair__card">
                         <img class="chair" src="img/chair1.jpg" alt="chair">
                         <div class="chair__card_hover">
-                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
                             <div class="chair__card_hover__title">Fishnet Chair</div>
                             <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
                         </div>
@@ -68,7 +83,7 @@
                     <div class="chair__card">
                         <img class="chair" src="img/chair2.jpg" alt="chair">
                         <div class="chair__card_hover">
-                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
                             <div class="chair__card_hover__title">Fishnet Chair</div>
                             <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
                         </div>
@@ -76,7 +91,7 @@
                     <div class="chair__card">
                         <img class="chair" src="img/chair3.jpg" alt="chair">
                         <div class="chair__card_hover">
-                            <a href="" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
+                            <a href="#" class="chair__card_hover__arrow"><img src="img/arrow.svg" alt="arrow"></a>
                             <div class="chair__card_hover__title">Fishnet Chair</div>
                             <div class="chair__card_hover__text">Seat and back with upholstery made of cold cure foam</div>
                         </div>
@@ -102,7 +117,7 @@
               <div class="main__trending">
                   <div class="main__trending__items">
                       <div class="title trending__title">Trending Products</div>
-                      <a class="explore explore1" href="">Explore all <img src="img/arrow.svg" alt="arrow"></a>
+                      <a class="explore explore1" href="#">Explore all <img src="img/arrow.svg" alt="arrow"></a>
                   </div>
                   <div class="images1">
                       <img class="product" src="img/product1.jpg" alt="product">
@@ -120,12 +135,12 @@
                     <div class="left__color-text main__left__color-text">Hot deal</div>
                     <div class="left__title">Fishnet Chair</div>
                     <div class="left__text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</div>
-                    <a class="order" href="">Order Us <img src="img/arrow.svg" alt="arrow"></a>
+                    <a class="order" href="#">Order Us <img src="img/arrow.svg" alt="arrow"></a>
                 </div>
               <div class="slider slider1">
-                  <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
-                  <a class="dot__link" href=""><svg class="dot_active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
-                  <a class="dot__link" href=""><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+                  <a class="dot__link" href="#"><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+                  <a class="dot__link" href="#"><svg class="dot_active" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
+                  <a class="dot__link" href="#"><svg class="dot" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40"><g><g><path fill="#9c9c9c" d="M20 0c11.046 0 20 8.954 20 20s-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0z"/></g></g></svg></a>
               </div>
           </div>
       </div>
@@ -135,7 +150,7 @@
                   <div class="left__color-text main__left__color-text1">Exclusive</div>
                   <div class="left__title main__left__title1">Fishnet Chair</div>
                   <div class="left__text main__left-text3">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt</div>
-                  <a class="order" href="">Order Us <img src="img/arrow.svg" alt="arrow"></a>
+                  <a class="order" href="#">Order Us <img src="img/arrow.svg" alt="arrow"></a>
               </div>
               <img class="product1" src="img/product12.jpg" alt="product">
               <img class="product1" src="img/product13.jpg" alt="product">
@@ -150,8 +165,8 @@
                   <div class="left__title left__title-tele">Find. Follow. Favorite.</div>
                   <div class="left__text left__text-tele">Save your favorites and share your style.</div>
                   <div class="apps">
-                      <a class="app" href=""><img src="img/app-store.png" alt="app-store"></a>
-                      <a class="app" href=""><img src="img/google-play.png" alt="google-play"></a>
+                      <a class="app" href="#"><img src="img/app-store.png" alt="app-store"></a>
+                      <a class="app" href="#"><img src="img/google-play.png" alt="google-play"></a>
                   </div>
               </div>
           </div>
@@ -170,14 +185,14 @@
                 <div class="useful__title footer__title">Useful Information</div>
                 <div class="useful__items1">
                     <li class="useful__items">
-                        <a class="useful__item__link" href=""><ul class="useful__item">Sales terms</ul></a>
-                        <a class="useful__item__link" href=""><ul class="useful__item useful__item2 ">Customer care</ul></a>
-                        <a class="useful__item__link" href=""><ul class="useful__item">Delivery</ul></a>
+                        <a class="useful__item__link" href="#"><ul class="useful__item">Sales terms</ul></a>
+                        <a class="useful__item__link" href="#"><ul class="useful__item useful__item2 ">Customer care</ul></a>
+                        <a class="useful__item__link" href="#"><ul class="useful__item">Delivery</ul></a>
                     </li>
                     <li class="useful__items">
-                        <a class="useful__item__link" href=""><ul class="useful__item">Architect accounts</ul></a>
-                        <a class="useful__item__link" href=""><ul class="useful__item useful__item2">Careers</ul></a>
-                        <a class="useful__item__link" href=""><ul class="useful__item">Exchanges & returns</ul></a>
+                        <a class="useful__item__link" href="#"><ul class="useful__item">Architect accounts</ul></a>
+                        <a class="useful__item__link" href="#"><ul class="useful__item useful__item2">Careers</ul></a>
+                        <a class="useful__item__link" href="#"><ul class="useful__item">Exchanges & returns</ul></a>
                     </li>
                 </div>
             </div>
@@ -193,12 +208,12 @@
         <div class="footer__bottom">
             <div class="copyright bottom__text"> &copy; Copyright - INTERIOR 2016. All Rights Reserved.</div>
             <div class="icons">
-                <a class="social__link" href=""><img class="social" src="img/fb.svg" alt="fb" width="26px" height="26px"></a>
-                <a class="social__link" href=""><img class="social" src="img/twitter.svg" alt="twitter" width="26px" height="26px"></a>
-                <a class="social__link" href=""><img class="social" src="img/google.png" alt="google" width="26px" height="26px"></a>
-                <a class="social__link" href=""><img class="social" src="img/pinterest.svg" alt="pinterest" width="26px" height="26px"></a>
+                <a class="social__link" href="#"><img class="social" src="img/fb.svg" alt="fb" width="26px" height="26px"></a>
+                <a class="social__link" href="#"><img class="social" src="img/twitter.svg" alt="twitter" width="26px" height="26px"></a>
+                <a class="social__link" href="#"><img class="social" src="img/google.png" alt="google" width="26px" height="26px"></a>
+                <a class="social__link" href="#"><img class="social" src="img/pinterest.svg" alt="pinterest" width="26px" height="26px"></a>
             </div>
-            <a class="terms bottom__text" href="">Terms & Conditions  /  Privacy policy & Cookies</a>
+            <a class="terms bottom__text" href="#">Terms & Conditions  /  Privacy policy & Cookies</a>
         </div>
     </div>
   </footer>
