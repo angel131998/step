@@ -1,0 +1,26 @@
+@mixin leftPart {
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+}
+@mixin wrapper{
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+@mixin items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin button {
+  outline: none;
+  border: none;
+}
